@@ -11,7 +11,7 @@ function valjastaTunniplaan() {
     tunniplaan
         .opetajaTunniplaaniAndmed()
         .then((tunnid) => {
-            console.log(tunnid);
+            kl.printNadalaKuupaevad(kl.nadalaKuupaevad(tunnid));
         })
         .catch((viga) => console.log(viga));
 }
