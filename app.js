@@ -1,6 +1,9 @@
 
 // Tunniplaani objekt
-const tunniplaan = new Tunniplaan(346, "2021-01-04");
+const tunniplaan = new Tunniplaan(346, '2019-04-01');
+
+// Kasutajaliidese objekt
+const kl = new KasutajaLiides();
 
 // Tunniplaani väljastamine
 document.addEventListener("DOMContentLoaded", valjastaTunniplaan);
