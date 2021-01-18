@@ -1,12 +1,23 @@
-class Tunniplaan{
+class Tunniplaan {
     constructor(opetaja, kuupaev) {
         this.opetaja = opetaja;
         this.kuupaev = kuupaev;
     }
 
-    async opetajaTunniplaanAndmed(){
-        const vastus = await fetch('https://siseveeb.khk.ee/veebilehe_andmed/tunniplaan?opetaja=' + this.opetaja + '&nadal=' + this.kuupaev);
+    async opetajaTunniplaaniAndmed() {
+        const vastus = await fetch(
+            "https://siseveeb.khk.ee/veebilehe_andmed/tunniplaan?opetaja=" +
+            this.opetaja +
+            "&nadal=" +
+            this.kuupaev
+        );
         const andmed = await vastus.json();
         return andmed;
     }
+
+    //Muuda õpetajat
+    muudaOpetaja(nimi) {
+        this.opetaja = nimi;
+    };
+
 }

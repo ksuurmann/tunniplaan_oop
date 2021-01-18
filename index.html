@@ -19,6 +19,44 @@
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center mb30">
                     <h2>Tunniplaan</h2>
                 </div>
+
+            
+                <!--Modaal--!>
+                <div class="container">
+                    <div class="row">
+                        <div class="col mx-auto text-center m-5 p-5 bg-info rounded">
+
+                            <button class="btn btn-secondary" data-toggle="modal" data-target="#vahetaopetaja">Otsi õpetaja tunniplaani</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal muuda õpetaja tunniplaani -->
+                <div class="modal fade" id="vahetaopetaja" tabindex="-1" role="dialog" aria-labelledby="vahetaOpetajaNimi" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="vahetaOpetajaNimi">Sisesta </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="opetaja-nimi">Õpetaja</label>
+                                        <input type="text" id="opetaja-nimi" class="form-control">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-info" id="muudaOpetaja">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Modaal--!>
+
                 <div class="table-responsive">
                     <table class="timetable table table-striped ">
                         <thead>
